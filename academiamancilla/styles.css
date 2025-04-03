@@ -88,9 +88,11 @@ footer {
     }
 }
 
-/* Ajuste da logo em telas menores */
 @media (max-width: 768px) {
     .logo {
-        width: 30%; /* Reduz o tamanho da logo para que os bulldogs e o texto fiquem visíveis */
+        width: 30% !important; /* Reduz forçadamente */
+        max-width: 150px; /* Garante que não fique grande demais */
+        display: block;
+        margin: 0 auto; /* Centraliza */
     }
 }
