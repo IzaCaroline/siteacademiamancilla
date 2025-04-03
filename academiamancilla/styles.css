@@ -88,11 +88,22 @@ footer {
     }
 }
 
+/* Esconder a logo principal e exibir a mobile */
 @media (max-width: 768px) {
-    .logo {
-        width: 30% !important; /* Reduz forçadamente */
-        max-width: 150px; /* Garante que não fique grande demais */
-        display: block;
-        margin: 0 auto; /* Centraliza */
+    .logo-principal {
+        display: none !important;
+    }
+    .logo-mobile {
+        display: block !important;
+        width: 120px; /* Ajuste conforme necessário */
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url('imagens/logo2.png') repeat center center fixed;
+        background-size: 80px; /* Define o tamanho da repetição */
     }
 }
