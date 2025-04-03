@@ -68,13 +68,16 @@ body {
     height: 200px;
     border-radius: 10px;
 }
+
 footer {
     width: 100%;
     background: rgba(0, 0, 0, 0.9);
-    padding: 15px;
     text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    min-height: 150px; /* Ajuste para ocupar mais espaço */
 }
-
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
@@ -107,4 +110,21 @@ footer {
         background: url('imagens/logo2.png') repeat center center fixed;
         background-size: 80px; /* Define o tamanho da repetição */
     }
+}
+
+/* Oculta a barra de rolagem no Chrome, Edge e Safari, mas mantém a rolagem */
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Oculta a barra de rolagem no Firefox */
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+/* Garante que a rolagem funcione normalmente */
+html, body {
+    overflow-y: scroll;
 }
