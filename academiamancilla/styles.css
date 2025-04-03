@@ -91,6 +91,6 @@ footer {
 /* Ajuste da logo em telas menores */
 @media (max-width: 768px) {
     .logo {
-        width: 70%; /* Reduz o tamanho da logo para que os bulldogs e o texto fiquem visíveis */
+        width: 60%; /* Reduz o tamanho da logo para que os bulldogs e o texto fiquem visíveis */
     }
 }
